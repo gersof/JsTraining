@@ -1,18 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hola</title>
 </head>
+
 <body>
     <h1>Hola Juan </h1>
     <br>
     <br>
     <br>
     <br>
-    <h3>juan tienes videos donde muestre como trabajar con Node.
-         de como realizar una pagina web o app.
+    <h3 id="saludo">juan tienes videos donde muestre como trabajar con Node.
+        de como realizar una pagina web o app.
     </h3>
+    <div id="contenedor"></div>
 </body>
+<script>
+    var num1 = 2;
+    var num2 = 5;
+    let nombre = prompt('Ingresa tu nombre');
+    if (num1 === 2) {
+        var nombre1 = "J"
+        let num1 = 4;
+        var num2 = 1;
+
+        // console.log(nombre);
+        if (num2 === 1) {
+            document.getElementById("saludo").innerHTML = 'hola señor ' + nombre;
+            var newDiv = document.createElement("div");
+            var newContent = document.createTextNode("Hi there and greetings!");
+            newDiv.appendChild(newContent);
+            let contenedor = document.getElementById("contenedor");
+            document.body.insertBefore(newDiv, contenedor);
+        }
+    }
+    console.log(nombre1);
+    console.log(num1);
+    console.log(num2);
+</script>
+
 </html>
