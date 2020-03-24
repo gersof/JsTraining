@@ -1,15 +1,4 @@
-const { Router } = require('express');
-const controllers = require('../controllers');
+const productsRouter = require('./products-routes');
+const employeesRouter = require('./employees-routes');
 
-const router = Router();
-
-router.get('/products', controllers.getAllProducts);
-
-router.post('/products', controllers.createProduct);
-
-router.put('/products/:id', controllers.updateProduct);
-
-router.delete('/products/:id', controllers.deleteProduct);
-
-
-module.exports = router;
+module.exports= [productsRouter, employeesRouter];
